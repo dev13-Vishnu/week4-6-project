@@ -71,8 +71,13 @@ app.get('/', (req, res) => {
                 return res.starus(401).json({message:'Invalid usename or password'});
             }
 
-            req.session.authenticated = true
+            req.session.authenticated = true;
+            req.session.username = user.username;
+            res.redirect('/home');  
+                
         } catch (error) {
+            console.error('Error during login:',error);
+            res.status(500).json({message: 'An error occured during login.Please try again'});
             
         }
 });
