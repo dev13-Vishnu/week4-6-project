@@ -1,0 +1,27 @@
+
+body {
+  background: url('/assets/martin-katler-PVDiZlqVxWQ-unsplash.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+main{
+  width: 100%;
+  max-width: 400px;
+  padding: 3rem 4rem;
+  padding-bottom: 6rem;
+  margin-top: 10rem !important;
+  
+}
+.bg-transparent{
+  margin: auto;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 20px;
+
+}
+.home-img{
+  background:url('assets/2nd.jpg');
+  background-size: cover;
+}
+.button{
+  padding-right: 5px;
+}
